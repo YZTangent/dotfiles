@@ -1,1 +1,1 @@
-![rice]($HOME/.config/rice.png)
+![rice](.config/rice.png)
