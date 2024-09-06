@@ -18,6 +18,11 @@ set $right l
 # set $term foot
 set $term alacritty
 
+# Touchscreen settings
+input type:touch {
+    map_to_output DP-1
+}
+
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -33,7 +38,7 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-output * bg /usr/share/backgrounds/default.png fill
+output * bg $HOME/.config/sway/backgrounds/default.jpg fill
 #
 # Example configuration:
 #
@@ -231,3 +236,14 @@ bindsym $mod+r mode "resize"
 # the trick, it's all in the `wordexp(3)`.
 #
 include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "/etc/sway/config.d/*.conf" "${XDG_CONFIG_HOME:-$HOME/.config}/sway/config.d/*.conf")'
+
+
+# Custom configs
+# smart_gaps on
+# gaps inner 10
+# gaps outer -10
+# gaps bottom 1
+# gaps top 1
+
+exec waybar
+# bar swaybar_command waybar
