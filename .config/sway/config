@@ -89,6 +89,9 @@ output * bg $HOME/.config/sway/backgrounds/default.jpg fill
     # Start your launcher
     bindsym $mod+d exec $menu
 
+    # Open bluetooth manager
+    bindsym $mod+b exec blueman-manager
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -156,9 +159,9 @@ output * bg $HOME/.config/sway/backgrounds/default.jpg fill
 # Layout stuff:
 #
     # You can "split" the current object of your focus with
-    # $mod+b or $mod+v, for horizontal and vertical splits
+    # $mod+h or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
+    bindsym $mod+h splith
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
