@@ -43,7 +43,8 @@ window#waybar.hidden {
 }
 
 #workspaces button.urgent {
-  background-color: #f7768e;
+  background-color: #bb9af7;
+  color: #282828;
 }
 
 #mode {
