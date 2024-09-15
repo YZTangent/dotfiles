@@ -217,6 +217,12 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+# Screenshot configs. Currently using grimshot and wl-clipboard.
+bindsym Print exec wl-copy < $(grimshot save active)
+bindsym Control+Shift+Print exec wl-copy < $(grimshot save output)
+bindsym Control+Print exec wl-copy < $(grimshot save area)
+bindsym Shift+Print exec wl-copy < $(grimshot save window)
+
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d
 #  - /etc/sway/config.d
