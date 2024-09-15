@@ -223,6 +223,9 @@ bindsym Control+Shift+Print exec wl-copy < $(grimshot save output)
 bindsym Control+Print exec wl-copy < $(grimshot save area)
 bindsym Shift+Print exec wl-copy < $(grimshot save window)
 
+# Shutdown hotkey
+bindsym $mod+Shift+p exec shutdown -h now
+
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d
 #  - /etc/sway/config.d
