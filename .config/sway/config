@@ -39,6 +39,9 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
 output * bg $HOME/.config/sway/backgrounds/default.jpg fill
+workspace 1 output eDP-1
+workspace 2 output DP-1
+workspace 4 output DP-1
 #
 # Example configuration:
 #
@@ -251,6 +254,7 @@ include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "
 
 
 # Custom configs
+# default_border none
 # smart_gaps on
 # gaps inner 10
 # gaps outer -10

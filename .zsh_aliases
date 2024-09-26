@@ -2,4 +2,4 @@ alias ls="eza --color=always --long --no-filesize --icons=always --no-time --no-
 alias ll="eza -alF"
 alias cd="z"
 alias config='/usr/bin/git --git-dir=/home/yuanzheng/.config --work-tree=/home/yuanzheng'
-alias exportenv='export $(cat .env)'
+alias exportenv='$HOME/.scripts/export_envs.sh'
