@@ -10,7 +10,7 @@ This setup is done using git and stow. The configuration files for each applicat
 ## Workflow:
 1. Applying all configs: Use `stow *` to create symbolic links to every `~/dotfiles/<application>` subdirectory.
 1. Applying the config for an application: Use `stow <application>` to create symbolic links pointing to the dotfiles in the `~/dotfiles/<application>` subdirectory.
-  - Example: `stow zsh` creates a symlink from `~/.zshrc` to `~/dotfiles/zsh/.zshrc`.
+    - Example: `stow zsh` creates a symlink from `~/.zshrc` to `~/dotfiles/zsh/.zshrc`.
 1. Remove the config for an application: Use `stow -D <application>` to remove the symbolic links.
 
 ## Acknowledgements
