@@ -1,0 +1,16 @@
+import = [
+  "~/dotfiles/alacritty/.config/alacritty/themes/themes/tokyo-night.toml"
+]
+
+[shell]
+program = "/bin/zsh"
+
+[window]
+# padding = { x = , y = 0.9 }
+# decorations = "Buttonless"
+opacity = 0.8
+
+[font]
+normal.family = "FiraCode Nerd Font"
+size = 15
+
