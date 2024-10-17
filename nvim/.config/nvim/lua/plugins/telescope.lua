@@ -2,7 +2,7 @@ return {
   "nvim-telescope/telescope.nvim",
   opts = {
     defaults = {
-      file_ignore_patterns = { ".git/", "node_modules/", "__pycache__" },
+      file_ignore_patterns = { ".git/", "node_modules/", "__pycache__", "target/" },
       hidden = true,
       no_ignore = true,
     },
