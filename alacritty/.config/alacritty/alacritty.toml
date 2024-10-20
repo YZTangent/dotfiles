@@ -14,3 +14,9 @@ opacity = 0.8
 normal.family = "FiraCode Nerd Font"
 size = 15
 
+[colors.primary]
+# background = '#383838'
+
+# Bright colors
+[colors.bright]
+black   = '#888888'

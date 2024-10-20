@@ -3,3 +3,4 @@ alias ll="eza -alF"
 alias cd="z"
 alias config='/usr/bin/git --git-dir=/home/yuanzheng/dotfiles --work-tree=/home/yuanzheng'
 alias exportenv='$HOME/.scripts/export_envs.sh'
+alias v='nvim'

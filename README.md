@@ -11,7 +11,7 @@
 - Editor: [Neovim](https://neovim.io/)
 
 
-## Workflow:
+## Workflow
 This workflow is done using git and stow. The configuration files for each application are stored under their respective directories `~/dotfiles/<application>/`.
   - Example: all the config files for zsh are stored under `~/dotfiles/zsh`,such as `~/dotfiles/zsh/.zshrc`.
 
@@ -25,3 +25,5 @@ This workflow is done using git and stow. The configuration files for each appli
 Thank you to:
 - [My linux for work](https://github.com/mylinuxforwork/dotfiles) for their waybar dotfiles
 - [Alacritty themes](https://github.com/alacritty/alacritty-theme) for their alacritty theme templates
+- [Lococo:p](https://www.pixiv.net/en/users/12342223), [卜卜](https://www.pixiv.net/en/users/2156906), [burnALLnight](https://www.pixiv.net/en/users/15128083) and [Kuroduki](https://www.pixiv.net/en/users/8956220) for the wallpapers 
+
