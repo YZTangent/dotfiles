@@ -9,6 +9,7 @@ return {
       "python-lsp-server",
       "rust-analyzer",
       "svelte-language-server",
+      "codelldb",
     },
   },
 }

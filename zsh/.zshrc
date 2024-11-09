@@ -45,6 +45,10 @@ source ~/.zsh_aliases
 # Set up fzf key bindings
 eval $(fzf --zsh)
 
-
+# go
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.local/bin
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
