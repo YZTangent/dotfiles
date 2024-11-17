@@ -1,8 +1,5 @@
-import = [
-  "~/dotfiles/alacritty/.config/alacritty/themes/themes/tokyo-night.toml"
-]
 
-[shell]
+[terminal.shell]
 program = "/bin/zsh"
 
 [window]
@@ -20,3 +17,10 @@ size = 15
 # Bright colors
 [colors.bright]
 black   = '#888888'
+
+[general]
+import = [
+  "~/dotfiles/alacritty/.config/alacritty/themes/themes/tokyo-night.toml"
+]
+
+[terminal]
