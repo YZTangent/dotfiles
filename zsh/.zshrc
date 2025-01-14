@@ -34,10 +34,10 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 # zsh autocompletions
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # zsh syntax highlighting
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # set up aliases
 source ~/.zsh_aliases
