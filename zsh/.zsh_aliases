@@ -1,6 +1,10 @@
 alias ls="eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias ll="eza -alF"
+alias lt="ls -s new -r"
+alias ltree="eza -T"
 alias cd="z"
 alias config='/usr/bin/git --git-dir=/home/yuanzheng/dotfiles --work-tree=/home/yuanzheng'
 alias exportenv='$HOME/.scripts/export_envs.sh'
 alias v='nvim'
+alias vim='nvim'
+alias hf="huggingface-cli"
