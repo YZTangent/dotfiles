@@ -1,19 +1,19 @@
-# Nobara Rice
+# NixOS Rice
 
-![rice](.settings/rice.png)
+![rice](.settings/niri-rice.png)
 
 ## Setup
-- OS: [Nobara Linux](https://nobaraproject.org/)
-- Desktop manager: [Hyprland](https://hyprland.org/)
+- OS: [NixOS](https://nixos.org/)
+- Desktop manager: [Niri](https://github.com/YaLTeR/niri)
 - Topbar: [Waybar](https://github.com/Alexays/Waybar)
-- Shell: [zsh](https://www.zsh.org/)
+- Shell: [fish](https://fishshell.com/)
 - Terminal emulator: [Alacritty](https://alacritty.org/)
 - Editor: [Neovim](https://neovim.io/)
 
 
 ## Workflow
 This workflow is done using git and stow. The configuration files for each application are stored under their respective directories `~/dotfiles/<application>/`.
-  - Example: all the config files for zsh are stored under `~/dotfiles/zsh`,such as `~/dotfiles/zsh/.zshrc`.
+  - Example: all the config files for niri are stored under `~/dotfiles/niri`,such as `~/dotfiles/niri/.config/niri/config.kdl`.
 
 1. Applying all configs: Use `stow *` to create symbolic links to every `~/dotfiles/<application>` subdirectory.
 1. Applying the config for an application: Use `stow <application>` to create symbolic links pointing to the dotfiles in the `~/dotfiles/<application>` subdirectory.
@@ -23,7 +23,5 @@ This workflow is done using git and stow. The configuration files for each appli
 ## Acknowledgements
 
 Thank you to:
-- [My linux for work](https://github.com/mylinuxforwork/dotfiles) for their waybar dotfiles
-- [Alacritty themes](https://github.com/alacritty/alacritty-theme) for their alacritty theme templates
-- [Lococo:p](https://www.pixiv.net/en/users/12342223), [卜卜](https://www.pixiv.net/en/users/2156906), [burnALLnight](https://www.pixiv.net/en/users/15128083) and [Kuroduki](https://www.pixiv.net/en/users/8956220) for the wallpapers 
+- [woioeow](https://github.com/woioeow/hyprland-dotfiles/tree/main) for their waybar dotfiles
 
