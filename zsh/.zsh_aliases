@@ -1,7 +1,0 @@
-alias ls="eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions"
-alias ll="eza -alF"
-alias cd="z"
-alias config='/usr/bin/git --git-dir=/home/yuanzheng/dotfiles --work-tree=/home/yuanzheng'
-alias exportenv='$HOME/.scripts/export_envs.sh'
-alias v='nvim'
-alias open='xdg-open'

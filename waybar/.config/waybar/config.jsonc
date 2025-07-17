@@ -1,0 +1,176 @@
+{
+  "layer": "top",
+  "position": "left",
+  "width": 42,
+  // "spacing": 0,
+  "modules-left": [
+    "niri/workspaces",
+    "niri/mode",
+    "tray"
+  ],
+  "modules-center": [
+    // "clock#time",
+    // "clock#date"
+    "clock"
+  ],
+  "modules-right": [
+    "network",
+    "battery",
+    "bluetooth",
+    "pulseaudio",
+    "custom/temperature",
+    "memory",
+    "cpu",
+    "backlight"
+  ],
+  "niri/workspaces": {
+    "disable-scroll": false,
+    "all-outputs": true,
+    "format": "{icon}",
+    "on-click": "activate",
+    "persistent-workspaces": {
+    "*":[1,2,3,4,5,6,7]
+    },
+    "format-icons":{
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "󰇮",
+    "5": "",
+    "6": "󰣇",
+    "7": ""
+    }
+  },
+  "custom/lock": {
+    "format": "  ",
+    "on-click": "swaylock",
+    "tooltip": true,
+    "tooltip-format": "锁屏"
+  },
+  "custom/reboot": {
+    "format": "  ",
+    "on-click": "systemctl reboot",
+    "tooltip": true,
+    "tooltip-format": "重启"
+  },
+  "custom/power": {
+    "format": "  ",
+    "on-click": "systemctl poweroff",
+    "tooltip": true,
+    "tooltip-format": "关机"
+  },
+  "network": {
+    "format-wifi": "󰤨 ",
+    "format-ethernet": " ",
+    "tooltip-format": "{essid} <span color='#FF1493'> 󰅧 </span>{bandwidthUpBytes}  <span color='#00BFFF'> 󰅢 </span>{bandwidthDownBytes}",
+    "format-linked": "󱘖 {ifname} (No IP) ",
+    "format-disconnected": " ",
+    "format-alt": "󰤨 {signalStrength}% ",
+    "interval": 1,
+    "justify": "center"
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}\n{capacity}%",
+    "format-charging": "󱐋\n{capacity}%",
+	  "interval": 1,
+    "format-icons": ["󰂎", "󰁼", "󰁿", "󰂁", "󰁹"],
+    "tooltip": true,
+    "justify": "center"
+  },
+  "pulseaudio": {
+    "format": "{icon} \n{volume}%",
+    "format-muted": "󰖁 \n0%",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click-right": "pavucontrol -t 3",
+    "on-click": "pactl -- set-sink-mute 0 toggle",
+    "tooltip": true,
+    "tooltip-format": "当前系统声音: {volume}%",
+    "justify": "center"
+  },
+  "custom/temperature": {
+    "exec": "sensors | awk '/^Package id 0:/ {print int($4)}'",
+    "format": " {}°C ",
+    "interval": 5,
+    "tooltip": true,
+    "tooltip-format": "当前 CPU 温度: {}°C"
+  },
+  "memory": {
+    "format": " \n{used:0.1f}G",
+    "tooltip": true,
+    "tooltip-format": "当前内存占比: {used:0.2f}G/{total:0.2f}G",
+    "justify": "center"
+  },
+  "cpu": {
+    "format": " \n{usage}%",
+    "tooltip": true,
+    "justify": "center"
+  },
+  "clock": {
+    "interval": 1,
+    "timezone": "Asia/Singapore",
+    "format": "{:%H:%M\n\n%h\n%d}th",
+    "tooltip": true,
+    "tooltip-format": "<big>{:%A %d %h %Y}</big>\n<tt><small>{calendar}</small></tt>",
+    "justify": "center"
+  },
+  // "clock#time": {
+  //   "interval": 1,
+  //   "timezone": "Asia/Singapore",
+  //   "format": "{:%H\n%M}",
+  //   "tooltip": true,
+  //   "tooltip-format": "<big>{:%A %d %h %Y}</big>\n<tt><small>{calendar}</small></tt>",
+  //   "justify": "center"
+  // },
+  // "clock#date": {
+  //   "interval": 1,
+  //   "timezone": "Asia/Singapore",
+  //   "format": "{:%d\n%b\n%a}",
+  //   "tooltip": true,
+  //   "tooltip-format": "<big>{:%A %d %h %Y}</big>\n<tt><small>{calendar}</small></tt>",
+  //   "justify": "center"
+  // },
+  "tray": {
+    "icon-size": 17,
+    "spacing": 6
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} \n{percent}%",
+    "tooltip": true,
+    "tooltip-format": "当前屏幕亮度: {percent}%",
+    "format-icons": [
+      "󰃞",  // 暗 - 深灰
+      "󰃝",  // 中 - 灰
+      "󰃟",  // 亮 - 柠檬黄
+      "󰃠"   // 最亮 - 金色
+    ],
+    "justify": "center"
+  },
+  "bluetooth": {
+    "format": "\n{status}",
+    "format-connected": "\n{device_battery_percentage}%",
+    "format-connected-battery": "\n{device_battery_percentage}%",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+    "justify": "center"
+  }
+}
+
