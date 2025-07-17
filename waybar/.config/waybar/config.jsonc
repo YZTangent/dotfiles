@@ -5,13 +5,15 @@
   // "spacing": 0,
   "modules-left": [
     "niri/workspaces",
-    "niri/mode",
-    "tray"
+    "niri/mode"
+    // "tray",
   ],
   "modules-center": [
     // "clock#time",
     // "clock#date"
-    "clock"
+    "clock",
+    "custom/lock",
+    "custom/power"
   ],
   "modules-right": [
     "network",
@@ -43,7 +45,7 @@
   },
   "custom/lock": {
     "format": "  ",
-    "on-click": "swaylock",
+    "on-click": "systemctl suspend && swaylock",
     "tooltip": true,
     "tooltip-format": "锁屏"
   },
