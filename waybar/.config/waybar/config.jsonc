@@ -45,7 +45,7 @@
   },
   "custom/lock": {
     "format": "  ",
-    "on-click": "systemctl suspend && swaylock -i ./lockpaper/paper.png",
+    "on-click": "systemctl suspend && swaylock",
     "tooltip": true,
     "tooltip-format": "锁屏"
   },
