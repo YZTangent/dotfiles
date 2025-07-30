@@ -265,6 +265,11 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
 spawn-at-startup "swaybg" "-i" "/home/yztangent/.config/niri/wallpapers/purplecreek.png" "-m" "fill"
+spawn-at-startup "xwayland-satellite :7" // xwayland support
+
+environment {
+    DISPLAY ":7"
+}
 
 hotkey-overlay{
   skip-at-startup
