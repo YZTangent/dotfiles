@@ -14,15 +14,23 @@ return {
   dependencies = {
     -- Required.
     "nvim-lua/plenary.nvim",
-
     -- see below for full list of optional dependencies 👇
+    "hrsh7th/nvim-cmp",
   },
+
   opts = {
     workspaces = {
       {
         name = "Personal",
         path = "~/Notes",
       },
+    },
+
+    completion = {
+      -- Set to false to disable completion.
+      nvim_cmp = true,
+      -- Trigger completion at 2 chars.
+      min_chars = 2,
     },
 
     -- see below for full list of options 👇
@@ -50,8 +58,7 @@ return {
           return require("obsidian").util.gf_passthrough()
         end,
         opts = { buffer = true, expr = true },
-      }
+      },
     },
-
   },
 }
