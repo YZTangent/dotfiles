@@ -27,20 +27,22 @@
   ],
   "niri/workspaces": {
     "disable-scroll": false,
-    "all-outputs": true,
     "format": "{icon}",
     "on-click": "activate",
-    "persistent-workspaces": {
-    "*":[1,2,3,4,5,6,7]
-    },
+    // "persistent-workspaces": {
+    // "*":[1,2,3,4,5,6,7]
+    // },
     "format-icons":{
-    "1": "",
-    "2": "",
-    "3": "",
-    "4": "󰇮",
-    "5": "",
-    "6": "󰣇",
-    "7": ""
+      "code": "",
+      "browser": "",
+      "chat": "",
+      "note": "",
+      // "5": "󰎱",
+      // "6": "󰎳",
+      // "7": "󰎶",
+      // "8": "󰎹",
+      // "9": "󰭂",
+      // "0": "󰎶"
     }
   },
   "custom/lock": {
