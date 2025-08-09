@@ -47,7 +47,7 @@
   },
   "custom/lock": {
     "format": "  ",
-    "on-click": "systemctl suspend && swaylock",
+    "on-click": "systemctl hibernate && swaylock",
     "tooltip": true,
     "tooltip-format": "锁屏"
   },
