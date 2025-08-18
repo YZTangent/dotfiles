@@ -3,3 +3,5 @@
 -- Add any additional keymaps here
 vim.keymap.set("n", "<CR>", "o<Esc>", { noremap = true })
 vim.keymap.set("n", "<C-CR>", "O<Esc>", { noremap = true })
+
+vim.keymap.set("n", "<leader>o", "<CMD>Oil<CR>", { desc = "Open parent directory" })

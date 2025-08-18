@@ -33,8 +33,6 @@ return {
       min_chars = 2,
     },
 
-    -- see below for full list of options 👇
-
     -- Optional, configure key mappings. These are the defaults. If you don't want to set any keymappings this
     -- way then set 'mappings = {}'.
     mappings = {
@@ -45,6 +43,13 @@ return {
         end,
         opts = { noremap = false, expr = true, buffer = true },
       },
+      -- Enter key changed to follow link only
+      ["<cr>"] = {
+        action = function()
+          return require("obsidian").util.gf_passthrough()
+        end,
+        opts = { buffer = true, expr = true },
+      },
       -- Toggle check-boxes.
       ["<leader>ch"] = {
         action = function()
@@ -52,12 +57,10 @@ return {
         end,
         opts = { buffer = true },
       },
-      -- Smart action depending on context, either follow link or toggle checkbox.
-      ["<cr>"] = {
-        action = function()
-          return require("obsidian").util.gf_passthrough()
-        end,
-        opts = { buffer = true, expr = true },
+      -- Create new obsidian note
+      ["<leader>cn"] = {
+        action = function() end,
+        opts = { buffer = true },
       },
     },
   },
