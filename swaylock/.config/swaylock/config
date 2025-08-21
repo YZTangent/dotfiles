@@ -2,8 +2,8 @@ font="JetBrains Mono Nerd Font"
 
 indicator-radius=55
 indicator-thickness=5
-indicator-x-position=681.5
-indicator-y-position=325
+indicator-x-position=767.5
+indicator-y-position=365
 
 image="$HOME/.config/swaylock/lockpaper/paper.png"
 
