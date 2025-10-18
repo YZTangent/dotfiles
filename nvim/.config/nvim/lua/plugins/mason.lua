@@ -10,6 +10,7 @@ return {
       "rust-analyzer",
       "svelte-language-server",
       "codelldb",
+      "clangd",
     },
   },
 }
