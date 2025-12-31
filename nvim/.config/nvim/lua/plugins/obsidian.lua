@@ -46,7 +46,11 @@ return {
       -- Enter key changed to follow link only
       ["<cr>"] = {
         action = function()
-          return require("obsidian").util.gf_passthrough()
+          if require("obsidian").util.cursor_on_markdown_link(nil, nil, true) then
+            return "<cmd>ObsidianFollowLink<CR>"
+          else
+            return "<cr>"
+          end
         end,
         opts = { buffer = true, expr = true },
       },
@@ -60,6 +64,27 @@ return {
       -- Create new obsidian note
       ["<leader>cn"] = {
         action = function() end,
+        opts = { buffer = true },
+      },
+      -- Create or open the daily note for today
+      ["<leader>cd"] = {
+        action = function()
+          return "<cmd>ObsidianToday<CR>"
+        end,
+        opts = { buffer = true },
+      },
+      -- Create or open the daily note for today
+      ["<leader>ct"] = {
+        action = function()
+          return "<cmd>ObsidianTomorrow<CR>"
+        end,
+        opts = { buffer = true },
+      },
+      -- Create or open the daily note for tomorrow
+      ["<leader>cy"] = {
+        action = function()
+          return "<cmd>ObsidianYesterday<CR>"
+        end,
         opts = { buffer = true },
       },
     },

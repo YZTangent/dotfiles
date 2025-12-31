@@ -1,0 +1,31 @@
+# Ghostty Configuration
+
+# Shell - Use fish as the default shell
+shell-integration = fish
+
+# Window switching keybindings (cmd+shift+ijkl)
+# cmd+shift+i: move focus up
+# cmd+shift+j: move focus left
+# cmd+shift+k: move focus down
+# cmd+shift+l: move focus right
+keybind = super+shift+i=goto_split:top
+keybind = super+shift+j=goto_split:left
+keybind = super+shift+k=goto_split:bottom
+keybind = super+shift+l=goto_split:right
+
+# Additional keybindings
+keybind = shift+enter=text:\x1b\r
+
+# Font configuration
+font-family = monospace
+font-size = 13
+
+# Window settings
+window-padding-x = 4
+window-padding-y = 4
+
+# Cursor
+cursor-style = block
+
+# Mouse
+mouse-hide-while-typing = true

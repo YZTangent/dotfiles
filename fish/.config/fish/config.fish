@@ -36,3 +36,12 @@ starship init fish | source
 
 # vi mode
 fish_vi_key_bindings
+
+# Bun installation
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/bytedance/Downloads/google-cloud-sdk/path.fish.inc' ]
+    . '/Users/bytedance/Downloads/google-cloud-sdk/path.fish.inc'
+end

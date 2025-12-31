@@ -2,7 +2,7 @@ return {
   {
     "akinsho/toggleterm.nvim",
     opts = {
-      shell = "/bin/zsh",
+      shell = "/opt/homebrew/bin/fish",
     },
   },
 }
